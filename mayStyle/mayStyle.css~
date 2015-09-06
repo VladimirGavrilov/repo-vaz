@@ -1,0 +1,268 @@
+   body{
+    margin:0;
+    padding:0; 
+    background: #98f611; /* Цвет фона */
+    font: 12pt  Pompadur, 'Comic Sans MS', cursive; 
+  }
+  /*весь контейнер*/
+	#container {
+    width: 1030px; /* Ширина слоя */
+    margin: 0 auto; /* Выравнивание по центру */
+    background: #98f611; /* Цвет фона   */; 
+    border-left: 4px double #5b910e;
+    border-right: 4px double #5b910e;
+     
+	  }
+	  
+	  /*шрифт*/
+	 @font-face {
+      font-family: Pompadur; /* Гарнитура шрифта */
+      src: url("../fonts/pompadur.ttf"); /* Путь к файлу со шрифтом */
+   }
+   h1 {font-family: Pompadur, 'Comic Sans MS', italic; }
+	 
+	 p{
+	   font-size: 12pt; 
+	   line-height: 12pt;
+	   line-height:140%;
+	 }
+	 p:first-letter {
+	    font-size: 105%; 
+	    font-style: italic;
+		  font-weight: bold;
+		  float: left ;
+		 
+		}
+		   
+		q:lang(ru){
+		quotes:"\00AB" "\00BB";
+		
+		}
+	 
+   a{
+    text-decoration: none;
+    color:#55111e;
+   }
+	#container > header{
+	  position: relative;	
+    padding-left: 200px;
+    height: 276px;
+    border-top:4px double black;
+    border-bottom: 4px double black;
+	  background-image: url("../image/panoran/pan8.jpg");
+	  background-repeat:no-repeat;
+	  padding-left: 380px;
+	  border-bottom: 4px double #5b910e;
+   }
+  
+
+    #logotip img{
+   position: absolute; 
+   left: 10px;
+   top: 5px;
+  	width:250px;
+  	height:260px; 
+  	border: 4px double black; 
+   
+  } 
+  pre{
+    text-align:right;
+    padding-right:20px;
+    color: red;
+    font-size: 1.2em;
+  }
+  /*левая панель*/
+  #sidebar {
+	  margin-top: 10px; 
+    width:352px; /* Ширина слоя */
+    padding: 0 10px;   /*  Отступы вокруг текста*/ 
+    float: left;  /* Обтекание по правому краю */
+      
+  }
+  
+  
+  /*горизонтальное меню*/
+  #menu{
+    height:25px;
+   /* border-bottom: 4px double black;*/
+      
+  }
+  #menu span{
+      display:inline-block;
+      text-transform: uppercase;
+      border-left: 2px solid #98f611;
+      height:22px;
+  }
+  
+  #menu span{
+  	margin-left:35px;
+  	font-size: 15px;
+  	text-decoration: none;
+  	font-weight: bold;
+  	border-left: 2px solid #98f611;
+  }
+ 
+  #menu span:hover{
+  	border-left: 2px solid #3d9b3d;
+  	background-color: #06e4ec;
+  	border-bottom: 2px solid #384624; 
+  }
+   #menu span [href="#"]{
+   background-image: url("../image/elementsImage/pipca.png");
+	 background-repeat:no-repeat;
+	 background-position:50% 130% ;  
+   color:red;
+   border-bottom: 2px solid #06e4ec;
+   
+   }
+  
+  /*фрейм девой колонки*/  
+  iframe.ifLeft{
+    border:none;
+    width:350px;
+    margin-top:20px;
+    height:610px;   
+    padding-left: 10px;
+    padding-bottom: 20px;
+    
+    
+    
+  }
+  #leftContent{
+   width:340px;
+   height:605px;
+   overflow:hidden;
+  }
+  
+  
+  
+  /*контент*/
+  #content {
+	   margin-left: 400px; 
+	   background-color: #98f611; 
+	   padding: 10px;
+	   border-left: 3px double #5b910e;
+	  
+  }
+  .noHiden{
+  border-bottom: 1px solid #5b910e;
+  cursor:pointer;
+  padding-bottom: 30px;
+  }
+  .hid{
+    display: none;
+  /* background-color: red; */
+  }
+  
+  .geleri img{       
+    border: 2px double #5b910e;  
+  }
+  figure{
+  display:inline-block;
+  width: 150px;  
+  margin: 10px 0;
+  overflow: hidden;
+  height: 260px;
+  }
+  .section{
+    margin-bottom: 40px;
+    border-bottom: 3px double #5b910e;
+    padding: 10px;
+  }
+
+  
+  /*подвал*/
+  footer{
+     background-color: #1915b7;
+     clear: both;
+     height: 80px;
+     color: #c708ea;
+     font: 17pt Arial, Helvetica, sans-serif;
+   
+  }
+  footer p{
+    padding-left:300px;  
+    padding-top: 20px;
+ 
+  }
+  
+  footer a div{
+     width: 45px;
+     height: 35px;     
+    position: fixed;
+  	bottom: 5px;
+  	left: 90px;
+  	background-image: url("../image/elementsImage/glyphicons1.jpg");
+	  background-repeat:no-repeat;
+	  background-position:-608px -230px;
+	  border-radius:35px 5px;
+	  opacity:0.4;  
+	  border: 3px double #5b910e;
+  }
+  footer a div:hover{
+    opacity:0.8;  
+	  border: 3px double #384624;
+  
+  }
+  
+  
+ .TOCSectNum{
+ 
+    display: none; 
+ }
+ #toc{
+  border-bottom: 3px double #5b910e;
+ 
+ }
+ 
+  
+ #toc div{
+ height: 35px;
+ border-left: 2px solid #98f611;
+ border-bottom: 2px solid #98f611;
+ }
+  #toc div:hover{
+	 border-left: 2px solid #5b910e;
+   background-color: #06e4ec;
+   border-bottom: 2px solid #384624; 
+  	}
+ 
+ #scene{
+   position: fixed; /* Абсолютное позиционирование */
+   width: 950px; /* Ширина слоя в пикселах */
+   height:800px; /* Высота слоя в пикселах */
+   left: 50%; /* Положение слоя от левого края */
+   top: 50%; /* Положение слоя от верхнего края */
+   margin-left: -450px; /* Отступ слева */
+   margin-top: -400px; /* Отступ сверху */
+   visibility: hidden;
+   overflow: hidden;
+   }
+    #scene img{
+    	 margin:auto; 
+    	 display: block;
+       border: groove 20px #98f611;  /*Параметры рамки вокруг*/
+    }
+ 
+  #scene button{
+  	position: absolute;
+  	top: 0;
+  	right: 57px;
+  	background-image: url("../image/elementsImage/glyphicons1.jpg");
+	  background-repeat:no-repeat;
+	  background-position:-657px -44px ;
+	  opacity:0.4;
+	  border-radius:35px 5px; 
+	   border: 3px double #5b910e; 
+  }
+   #scene button:hover{
+   opacity:0.7;
+    border: 3px double #384624;
+   }
+  
+ #scene button > div{ 	  
+   width: 20px; /* Ширина слоя в пикселах */
+   height: 20px; 
+   	 
+ } 
+
